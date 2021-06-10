@@ -28,7 +28,7 @@ export const sticky = css`
 `;
 
 export const fixed = css`
-  position: fixed;
+  {/* position: fixed; */''}
   top: ${(props) => props.top && getValue(props.top)};
   bottom: ${(props) => props.bottom && getValue(props.bottom)};
   left: ${(props) => props.left && getValue(props.left)};
@@ -72,8 +72,8 @@ export const notiNew = css`
   }
 `;
 
-// const flex = css`
-//     display: flex;
-//     justify-content: ${props => props.justifyContent};
-//     align-items: ${props => props.justifyContent};
-// `;
+export const flex = css`
+  display: flex;
+  justify-content: ${(props) => props.justifyContent};
+  align-items: ${(props) => props.justifyContent};
+`;
